@@ -25,10 +25,10 @@ Javascript
 Inquirer, MongoDB, Node, Express, FS, bcrypt, Mongoose
 
 ### Features
-A database!  And colors!  And onscreen lettering!  This API will be set on a NoSQL platform to enable unstructured data for a social media platform.  
+enable collections of books for your shelves by using a React framework around a borked set of code. 
 
 ### How to Use this Application
-Use Insomnia.  Get API routes. See the JSON fuzzyness. Post, Put, and Delete thoughts to remain fuzzy.
+Run start.  Insert Waffles.  Collect tokens.  Pay quarters.
 
 ### Contributors
 N/A
