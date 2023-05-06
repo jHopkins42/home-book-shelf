@@ -45,7 +45,7 @@ Not available at this time
 ### Links
 Main Repository: [(https://github.com/jHopkins42/home-book-shelf)]
 .
-Deployed Page: [()]
+Deployed Page: [(https://jhopkins42.github.io/home-book-shelf/)]
 
 ### Video walkthrough
 not available at this time.
