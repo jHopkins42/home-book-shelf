@@ -51,4 +51,4 @@ Deployed Page: [(https://jhopkins42.github.io/home-book-shelf/)]
 not available at this time.
 
 ### Waffles
-[(https://youtu.be/1Gz8d4Kay84?t=101)]
+<img src="https://youtu.be/1Gz8d4Kay84?t=101">
