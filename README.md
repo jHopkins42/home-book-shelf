@@ -16,7 +16,7 @@ Keeping track of all those books.
 * [Bonus](#waffles)
 
 ### License
-[(https://img.shields.io/github/license/jhopkins42/home-book-shelf)]
+<img src="https://img.shields.io/github/license/jhopkins42/home-book-shelf">
 
 ### Language
 Javascript
