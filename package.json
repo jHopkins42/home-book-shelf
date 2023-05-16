@@ -4,9 +4,10 @@
   "description": "Keeping track of all those books.",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server/server.js",
     "start": "node server/server.js"
-  }
+  },
   "dependencies": {
     "ajv": "^8.12.0",
     "ansi-escapes": "^4.3.2",
@@ -400,9 +401,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
