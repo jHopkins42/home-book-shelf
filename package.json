@@ -2,7 +2,11 @@
   "name": "home-book-shelf",
   "version": "1.0.0",
   "description": "Keeping track of all those books.",
-  "main": "index.js",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "start": "node server/server.js"
+  }
   "dependencies": {
     "ajv": "^8.12.0",
     "ansi-escapes": "^4.3.2",
@@ -256,7 +260,6 @@
     "node": "^20.1.0",
     "node-bin-setup": "^1.1.3",
     "node-fetch": "^2.6.9",
-    "nodemon": "^2.0.22",
     "normalize-url": "^6.1.0",
     "npm-run-path": "^4.0.1",
     "number-is-nan": "^1.0.1",
@@ -394,6 +397,9 @@
     "yn": "^3.1.1",
     "zen-observable": "^0.8.15",
     "zen-observable-ts": "^0.8.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
