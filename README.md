@@ -51,4 +51,4 @@ Deployed Page: [(https://jhopkins42.github.io/home-book-shelf/)]
 not available at this time.
 
 ### Waffles
-[(<video src="https://www.youtube.com/shorts/plRv4y9WpyE">"I'm making Waffles. Shrek - YouTube"</video>)]
+[(https://youtube.com/shorts/plRv4y9WpyE?feature=share)]
