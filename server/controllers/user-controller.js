@@ -11,7 +11,10 @@ const getUsers = (req, res) => {
 // Access is Private: (for now)
 
 const setUser = (req, res) => {
-    console.log(req.body)
+    if(!req.body.text){
+    res.status(400)({ message: 'missing info'})
+}
+
     res.status(200).json({ nessage: 'adding links '})
 }
 
