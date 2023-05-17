@@ -12,7 +12,8 @@ const getUsers = (req, res) => {
 
 const setUser = (req, res) => {
     if(!req.body.text){
-    res.status(400)({ message: 'missing info'})
+    res.status(400)
+    throw new Error('missing info')
 }
 
     res.status(200).json({ nessage: 'adding links '})
