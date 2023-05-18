@@ -1,0 +1,32 @@
+/*palette colors*/
+/*first tier:
+#f0ece2;
+#dfd3ce;
+#c7b198;
+#596e79;
+
+second tier:
+#3c4245;
+#5f6789;
+#719192;
+#dfcdc3;
+*/
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+  
+  .small {
+    font-weight: 300;
+    font-style: italic;
+  }
