@@ -5,25 +5,23 @@ const Book = require("../models/book");
 // >description: get all the books
 //route is get / api/book-routes
 //access is private for now
-const getAllBooks = async (req, res, next) => {
+const getAllBooks = asyncHandler(async (req, res, next) => {
+  res.status(200).json({ message: 'blowing the dust off '})
   let books;
-  try {
-    books = await Book.find();
-  } catch (err) {
-    console.log(err);
+  if(!req.body.text) {
+    res.status(400)
+    throw new Error('No Products Found')
+}
+    res.status(200).json({ message: 'Your Book SirOrMaam '})
+       
   }
-
-  if (!books) {
-    return res.status(404).json({ message: "No products found" });
-  }
-  return res.status(200).json({ books });
-};
+);
 
 
 // >description: get specific books
 //route is get / api/book-routes
 //access is private for now
-const getById = async (req, res, next) => {
+const getBookByID = asyncHandler(async (req, res, next) => {
   const id = req.params.id;
   let book;
   try {
@@ -35,13 +33,14 @@ const getById = async (req, res, next) => {
     return res.status(404).json({ message: "No Book found" });
   }
   return res.status(200).json({ book });
-};
+}
+);
 
 
 // >description: add a books
 //route is get / api/book-routes
 //access is private for now
-const addBook = async (req, res, next) => {
+const setBooks = async (req, res, next) => {
   const { name, author, description, price, available, image } = req.body;
   let book;
   try {
@@ -68,18 +67,21 @@ const addBook = async (req, res, next) => {
 // >description: update a books
 //route is get / api/book-routes
 //access is private for now
-const updateBook = async (req, res, next) => {
+const putBooks  = asyncHandler(async (req, res, next) => {
   const id = req.params.id;
   const { name, author, description, price, available, image } = req.body;
   let book;
   try {
     book = await Book.findByIdAndUpdate(id, {
       name,
+      id,
       author,
+      genre,
       description,
       price,
       available,
       image,
+     
     });
     book = await book.save();
   } catch (err) {
@@ -89,7 +91,8 @@ const updateBook = async (req, res, next) => {
     return res.status(404).json({ message: "Unable To Update By this ID" });
   }
   return res.status(200).json({ book });
-};
+}
+);
 
 
 // >description: delete specific books
@@ -97,7 +100,7 @@ const updateBook = async (req, res, next) => {
 //access is private for now
 // but why would you ever delete a book?
 
-const deleteBook = async (req, res, next) => {
+const deleteBooks = asyncHandler(async (req, res, next) => {
   const id = req.params.id;
   let book;
   try {
@@ -109,13 +112,14 @@ const deleteBook = async (req, res, next) => {
     return res.status(404).json({ message: "Unable To Delete By this ID" });
   }
   return res.status(200).json({ message: "Product Successfully Deleted" });
-};
+}
+);
 
 //exports
 
 module.exports = {
     getAllBooks,
-    SetBooks,
+    setBooks,
     putBooks,
     deleteBooks,
     getBookByID,

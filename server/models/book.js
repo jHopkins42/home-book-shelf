@@ -9,6 +9,11 @@ const bookSchema = new Schema({
         required: true,
 
     },
+    id: {
+        type: Number,
+        required: true,
+
+    },
     author: {
         type: String,
         required: true,
