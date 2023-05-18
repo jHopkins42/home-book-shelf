@@ -1,0 +1,16 @@
+//constants/ imports
+const express = require('express')
+const router = express.Router()
+const { getAllBooks, 
+    setBooks, 
+    putBooks, 
+    deleteBooks,
+    getBookByID,
+ } = require('../../controllers/book-controller')
+
+ //routes
+ router.route('/').get(getAllBooks).post(setBooks)
+ router.route('/:id').delete(deleteBooks).put(putBooks).getAll(getBookByID)
+
+//exports
+module.exports = router
